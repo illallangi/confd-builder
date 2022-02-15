@@ -1,11 +1,11 @@
 # Confd
 
-Confd
-
-## Installation
-
-TBC
+Confd, for use in other docker images
 
 ## Usage
 
-TBC
+    # main image
+    FROM docker.io/library/debian:latest
+    
+    # install caddy
+    COPY --from=ghcr.io/illallangi/confd-builder:latest /go/bin/confd /usr/local/bin/confd
