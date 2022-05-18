@@ -7,5 +7,5 @@ Confd, for use in other docker images
     # main image
     FROM docker.io/library/debian:latest
     
-    # install caddy
+    # install confd
     COPY --from=ghcr.io/illallangi/confd-builder:latest /go/bin/confd /usr/local/bin/confd
